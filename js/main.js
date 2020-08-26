@@ -3,8 +3,11 @@ var input = document.getElementsByClassName("number_val_input");
 var btn_generate = document.getElementById("generate_btn");
 var body1 = document.getElementsByTagName('body');
 
-var select = document.createElement('select');
+var title = document.getElementById('h1');
+title.style.color  = '#fff000';
 
+var select = document.createElement('select');
+select.style.background = '#000000';
 body1[0].appendChild(select);
 for(var i = 0; i < 10; i++){
     var option = document.createElement('option');
@@ -43,6 +46,12 @@ function validar(){
 
 function over(elemento){
     elemento.innerHTML = "Over me";
+    elemento.style.background = '#ffffff';
+}
+
+function out(elemento){
+    elemento.style.background = '#fff000';
+    elemento.color = '#ccc';
 }
 
 /*console.log("Hello World");
