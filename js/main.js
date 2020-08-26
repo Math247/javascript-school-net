@@ -48,3 +48,35 @@ myFunction("Matheus");
     return console.log("Name => " + name);
 })("Matheus");
 
+var ft = ["Matheus", "Luiz"];
+
+var ft1 = ["Gabriel"];
+
+//adiciona no array na ultima posição
+ft.push("Leonan");
+
+console.log(ft);
+
+//pega o ultimo item do array e elimina
+ft.pop();
+
+console.log(ft);
+
+//adiciona no array na primeira posição
+ft.unshift("Gabi");
+
+console.log(ft);
+
+console.log(ft[2]);
+
+//remove o primeiro item do array
+ft.shift();
+
+//escolhe qual elemento do array irá remover
+ft.splice(0, 1);
+
+//pega o index do determinado elemento
+ft.indexOf("Matheus");
+
+//juntar dois arrays
+var result = ft.concat(ft1);
