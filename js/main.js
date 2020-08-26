@@ -1,4 +1,23 @@
-console.log("Hello World");
+var click_me = document.getElementById("click_me");
+click_me.addEventListener("click", fnClickMe);
+function fnClickMe(){
+    alert("You clicked me");
+}
+
+function validar(){
+    var number = document.getElementById("number_val").value;
+    if(isNaN(number) || (number >= 1 && number <= 10)){
+        alert("Imput is not valid");
+    }else{
+        alert("Input is valid");
+    }
+}
+
+function over(){
+    console.log("over me");
+}
+
+/*console.log("Hello World");
 //quando usamos aspas, se torna um caractere, e vira uma string;
 var number = 0;
 console.log(typeof number);
@@ -80,3 +99,4 @@ ft.indexOf("Matheus");
 
 //juntar dois arrays
 var result = ft.concat(ft1);
+*/
