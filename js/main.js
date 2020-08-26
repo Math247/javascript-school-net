@@ -37,3 +37,14 @@ for (var a = 0; a < 10; a++){
     console.log(value, key);
 });
 
+function myFunction(name){
+    console.log("Name =>", name);
+}
+
+myFunction("Matheus");
+
+//função auto executável, é executada sem precisar ser chamada
+(function check(name){
+    return console.log("Name => " + name);
+})("Matheus");
+
