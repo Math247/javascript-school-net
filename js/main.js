@@ -54,7 +54,7 @@ function out(elemento){
     elemento.color = '#ccc';
 }
 
-/*console.log("Hello World");
+console.log("Hello World");
 //quando usamos aspas, se torna um caractere, e vira uma string;
 var number = 0;
 console.log(typeof number);
@@ -136,4 +136,20 @@ ft.indexOf("Matheus");
 
 //juntar dois arrays
 var result = ft.concat(ft1);
-*/
+
+
+var prop1 = prompt ('Model?');
+var prop2 = prompt ('Name?');
+var prop3 = prompt ('Color');
+
+//criando um novo objeto
+var obj = {};
+obj.model = prop1;
+obj.name = prop2;
+obj.color = prop3;
+obj.start = function(){
+    console.log('I m  ready');
+}
+
+console.log(obj);
+obj.start();
